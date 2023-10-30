@@ -3,13 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function Navbar() {
+  const [user, setUserData] = useState(null);
+
   const router = useRouter();
   const pathname = usePathname();
 
   const isNavbarHidden = pathname === "/login" || pathname === "/signup";
+
+  const userData = JSON.parse(localStorage.getItem("user-data")) || null;
+  if (userData) {
+    setUserData(userData);
+  }
 
   useEffect(() => {
     const removeDefaultBehaviour = (e) => {
@@ -87,18 +94,28 @@ function Navbar() {
           </div>
 
           {/* signup and login button */}
-          <div className="hidden xl:flex gap-6 items-center h-fill w-fit">
-            <Link className="font-normal text-lg underline" href={"/signup"}>
-              SignUp
-            </Link>
+          {!user?.isAuth ? (
+            <div className="hidden xl:flex gap-6 items-center h-fill w-fit">
+              <Link className="font-normal text-lg underline" href={"/signup"}>
+                SignUp
+              </Link>
+              <button
+                className="p-2 w-[150px] rounded-lg text-white text-lg font-semibold bg-[rgb(254,134,28)] hover:scale-95 duration-200"
+                onClick={() => {
+                  router.push("/login");
+                }}>
+                Login
+              </button>
+            </div>
+          ) : (
             <button
               className="p-2 w-[150px] rounded-lg text-white text-lg font-semibold bg-[rgb(254,134,28)] hover:scale-95 duration-200"
               onClick={() => {
-                router.push("/login");
+                axios.get("/api/users/logout");
               }}>
-              Login
+              Logout
             </button>
-          </div>
+          )}
         </div>
       )}
     </>

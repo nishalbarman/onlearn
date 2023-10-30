@@ -15,17 +15,13 @@ export default function Home() {
             take high quality and highly productive online classes from the
             comfort of your home.
           </p>
-          <div className="flex space-2 flex-col  sm:flex-row w-[100%] lg:w-[50%] gap-4">
+          <div className="flex space-2 flex-col sm:flex-row w-[100%] lg:w-[50%] gap-4">
             <buton className="h-[53px] text-white font-medium bg-[rgb(13,12,34)] pl-10 pr-10  rounded-3xl flex items-center justify-center hover:cursor-pointer whitespace-nowrap hover:bg-[rgb(63,62,92)] duration-200 hover:scale-105">
               Book A Free Class
             </buton>
           </div>
         </div>
-        <div
-          style={{
-            clipPath: "polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)",
-          }}
-          className="flex w-[100%] items-center justify-center flex-col">
+        <div className="flex w-[100%] items-center justify-center flex-col">
           <img
             className="w-[450px] h-[450px]"
             src="/images/teacher.png"
