@@ -13,11 +13,6 @@ function Navbar() {
 
   const isNavbarHidden = pathname === "/login" || pathname === "/signup";
 
-  const userData = JSON.parse(localStorage.getItem("user-data")) || null;
-  if (userData) {
-    setUserData(userData);
-  }
-
   useEffect(() => {
     const removeDefaultBehaviour = (e) => {
       e.preventDefault();
