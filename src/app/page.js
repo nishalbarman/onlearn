@@ -144,10 +144,10 @@ export default function Home() {
           </div>
           <div className="p-4">
             <p className="text-[rgb(0,35,90)] font-bold mb-2">
-              Student's Results
+              Student&apos;s Results
             </p>
             <p className="line-clamp-2 font-medium text-black font-normal">
-              Every student's results & reviews are important to us.
+              Every student&apos;s results & reviews are important to us.
             </p>
           </div>
         </div>
@@ -295,7 +295,7 @@ export default function Home() {
                   We verify the identity, coordinates (telephone, email and
                   photo), as well as the diploma for all of our teachers.
                   <br />
-                  For every teacher's ad, evaluations and reviews by our
+                  For every teacher&apos;s ad, evaluations and reviews by our
                   students are 100% certified.
                 </p>
               </details>
