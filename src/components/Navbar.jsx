@@ -3,12 +3,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { useEffect } from "react";
 
 function Navbar() {
   const router = useRouter();
+  useEffect(() => {
+    const removeDefaultBehaviour = (e) => {
+      e.preventDefault();
+    };
+
+    window.addEventListener("contextmenu", removeDefaultBehaviour);
+
+    return () => {
+      window.removeEventListener("contextmenu", removeDefaultBehaviour);
+    };
+  }, []);
   return (
-    <div className="shadow-[rgba(17,17,26,0.1)_0px_1px_0px] flex items-center  pt-5 pb-5 w-[100%] justify-between pl-3 pr-3 lg:pl-[15%] lg:pr-[15%]">
+    <div className="fixed backdrop-blur z-10 border-b border-[rgb(0,0,0,0.1)] shadow-[rgba(17,17,26,0.09)_0px_1px_0px] flex items-center  pt-5 pb-5 w-[100%] justify-between pl-3 pr-3 lg:pl-[15%] lg:pr-[15%]">
       {/* menu icon */}
       <div className="flex items-center justify-center xl:hidden w-fit h-fit hover:cursor-pointer">
         <Image src="/icons/menu.png" width={32} height={32} />
