@@ -18,10 +18,7 @@ export default function Home() {
           </p>
           <div className="flex space-2 flex-col  sm:flex-row w-[100%] lg:w-[50%] gap-4">
             <buton className="h-[53px] text-white font-medium bg-[rgb(13,12,34)] pl-10 pr-10  rounded-3xl flex items-center justify-center hover:cursor-pointer whitespace-nowrap hover:bg-[rgb(63,62,92)] duration-200 hover:scale-105">
-              Find Courses
-            </buton>
-            <buton className="h-[50px]  pl-10 pr-10 text-black shadow font-medium bg-white rounded-3xl flex items-center justify-center hover:cursor-pointer whitespace-nowrap hover:shadow-xl duration-200 hover:scale-105">
-              Get Started
+              Book A Free Class
             </buton>
           </div>
         </div>
@@ -36,6 +33,16 @@ export default function Home() {
             alt="teacher"
           />
         </div>
+      </div>
+
+      {/* just simple ad type screen */}
+      <div className="w-[100%] h-[150px] lg:h-[180px] rounded-3xl bg-[rgb(255,241,241)] flex items-center justify-between gap-2">
+        <p className="text-xl pl-[20px] lg:text-2xl font-bold lg:pl-[80px]">
+          What you can expect from us!
+        </p>
+        <img
+          className="h-[100px] w-[100px] lg:h-auto lg:w-auto pr-[20px] lg:pr-[80px] self-end"
+          src="https://c.superprof.com/style/images/landing/blocAdvices/01.png"></img>
       </div>
 
       {/* features of our web  */}
@@ -230,6 +237,16 @@ export default function Home() {
         </div>
       </div>
 
+      {/* just simple ad type screen */}
+      <div className="w-[100%] h-[150px] lg:h-[180px] rounded-3xl bg-[rgb(232,242,255)] flex items-center justify-between gap-2">
+        <p className="text-xl pl-[20px] lg:text-2xl font-bold lg:pl-[80px]">
+          May be your are looking for some FAQ
+        </p>
+        <img
+          className="h-[100px] w-[100px] lg:h-auto lg:w-auto pr-[20px] lg:pr-[80px] self-end"
+          src="https://c.superprof.com/style/images/landing/blocAdvices/01.png"></img>
+      </div>
+
       {/* frequently asked questions */}
       <div className="w-[100%]">
         <p className="font-bold text-xl mb-5 uppercase">
@@ -273,6 +290,7 @@ export default function Home() {
                     </svg>
                   </div>
                 </summary>
+                <hr className="mt-3" />
                 <p className="pt-3 p-1">
                   We verify the identity, coordinates (telephone, email and
                   photo), as well as the diploma for all of our teachers.
@@ -301,6 +319,7 @@ export default function Home() {
                     </svg>
                   </div>
                 </summary>
+                <hr className="mt-3" />
                 <p className="pt-3 p-1">
                   You can discuss directly with your tutor via email or phone.
                   Their contact details are in the left-hand column of the
@@ -342,6 +361,7 @@ export default function Home() {
                     </svg>
                   </div>
                 </summary>
+                <hr className="mt-3" />
                 <p className="pt-3 p-1">
                   Yes, on Superprof you can find teachers taking online classes
                   for all subjects you wish to learn.
@@ -371,6 +391,7 @@ export default function Home() {
                     </svg>
                   </div>
                 </summary>
+                <hr className="mt-3" />
                 <p className="pt-3 p-1">
                   The average fee for online Academic tutoring classes is ₹200.
                   <br />
