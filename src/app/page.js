@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex gap-6 bg-white flex-col min-h-screen items-center p-3 lg:pl-[15%] lg:pr-[15%]">
+    <main className="flex gap-9 bg-white flex-col min-h-screen items-center p-3 lg:pl-[15%] lg:pr-[15%]">
       {/* main section about */}
       <div className="flex flex-col-reverse lg:flex-row gap-3">
         <div className="flex align-center justify-center flex-col gap-10 pr-3 pl-3 lg:w-[100%] w-[100%]">
@@ -149,7 +149,9 @@ export default function Home() {
       {/* short term courses  */}
       <div className="">
         <p className="font-bold text-xl mb-5 uppercase">
-          <span className="w-[10px] bg-[rgb(247,0,0)] rounded-xl">&nbsp;</span>{" "}
+          <span className="w-[10px] bg-[rgb(254,134,28)] rounded-xl">
+            &nbsp;
+          </span>{" "}
           Online Available Classes
         </p>
         <div className="grid justify-center place-content-around grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 md:gap-3 lg:grid-cols-3 lg:gap-5 xl:grid-cols-4 xl:gap-5">
@@ -225,6 +227,158 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* frequently asked questions */}
+      <div className="w-[100%]">
+        <p className="font-bold text-xl mb-5 uppercase">
+          <span className="w-[10px] bg-[rgb(254,134,28)] rounded-xl">
+            &nbsp;
+          </span>{" "}
+          FAQ
+        </p>
+        <div className="w-[100%] m-auto shadow rounded-lg p-5">
+          <section className="bg-white lg:w-5/5 lg:px-10 lg:pb-8 lg:pt-10 rounded-lg flex flex-col lg:flex-row lg:justify-between">
+            <div className="w:[100%] lg:w-4/6 mb-5 lg:mb-0">
+              <p className="text-xl font-semibold pr-5">
+                Frequently asked questions
+              </p>
+              <p className="text-gray-800 font-normal pt-3 pr-5">
+                A frequently asked questions list is often used in articles,
+                websites, email lists, and online forums where common questions
+                tend to recur, for example through posts or queries by new users
+                related to common knowledge gaps.
+              </p>
+            </div>
+            <div className="w:[100%] lg:w-3/4">
+              <details className="border border-slate-200 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
+                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7">
+                  How are teachers selected to give online tutoring classes on
+                  OnLearn?
+                  <div className="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
+                    <svg
+                      className="h-5 w-4 text-[rgb(254,134,28)]-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokewidth="{1.5}"
+                      stroke="currentColor"
+                      classname="w-6 h-6">
+                      <path
+                        strokelinecap="round"
+                        strokelinejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </div>
+                </summary>
+                <p className="pt-3 p-1">
+                  We verify the identity, coordinates (telephone, email and
+                  photo), as well as the diploma for all of our teachers.
+                  <br />
+                  For every teacher's ad, evaluations and reviews by our
+                  students are 100% certified.
+                </p>
+              </details>
+              <details className="border border-slate-200 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
+                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7">
+                  How do Online classes works?
+                  <div className="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
+                    <svg
+                      className="h-5 w-4 text-[rgb(254,134,28)]-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokewidth="{1.5}"
+                      stroke="currentColor"
+                      classname="w-6 h-6">
+                      <path
+                        strokelinecap="round"
+                        strokelinejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </div>
+                </summary>
+                <p className="pt-3 p-1">
+                  You can discuss directly with your tutor via email or phone.
+                  Their contact details are in the left-hand column of the
+                  lesson request page. You can then decide with your teacher on
+                  the preferred format of your lessons.
+                  <br />
+                  There are a number of possibilities:
+                </p>
+                <ul className="p-1">
+                  <li>OnLearn Plateform</li>
+                  <li>Skype</li>
+                  <li>Hangout</li>
+                  <li>Zoom</li>
+                  <li>Discord</li>
+                  <li>Telephone</li>
+                </ul>
+                <p className="p-1">
+                  A number of tools allow you to exchange via audio and video,
+                  as well as to share your screen.
+                </p>
+              </details>
+              <details className="border border-slate-200 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
+                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7">
+                  Can you learn Academic tutoring online?
+                  <div className="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
+                    <svg
+                      className="h-5 w-4 text-[rgb(254,134,28)]-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokewidth="{1.5}"
+                      stroke="currentColor"
+                      classname="w-6 h-6">
+                      <path
+                        strokelinecap="round"
+                        strokelinejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </div>
+                </summary>
+                <p className="pt-3 p-1">
+                  Yes, on Superprof you can find teachers taking online classes
+                  for all subjects you wish to learn.
+                  <br />
+                  Online classes are an excellent choice for students who wish
+                  to learn at home.
+                </p>
+              </details>
+              <details className="border border-slate-200 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
+                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7">
+                  What is the average price for online Academic tutoring classes
+                  in India?
+                  <div className="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
+                    <svg
+                      className="h-5 w-4 text-[rgb(254,134,28)]-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokewidth="{1.5}"
+                      stroke="currentColor"
+                      classname="w-6 h-6">
+                      <path
+                        strokelinecap="round"
+                        strokelinejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </div>
+                </summary>
+                <p className="pt-3 p-1">
+                  The average fee for online Academic tutoring classes is ₹200.
+                  <br />
+                  The rate will vary based on a number of different factors:
+                </p>
+              </details>
+            </div>
+          </section>
         </div>
       </div>
     </main>
