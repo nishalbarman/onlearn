@@ -1,113 +1,232 @@
-import Image from 'next/image'
+import Image from "next/legacy/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex gap-6 bg-white flex-col min-h-screen items-center p-3 lg:pl-[15%] lg:pr-[15%]">
+      {/* main section about */}
+      <div className="flex flex-col-reverse lg:flex-row gap-3">
+        <div className="flex align-center justify-center flex-col gap-10 pr-3 pl-3 lg:w-[100%] w-[100%]">
+          <p className="font-bold text-4xl lg:leading-[4rem] w-[100%]  lg:text-5xl lg:w-[95%]">
+            Learn from anywhere with{" "}
+            <span className="text-[rgb(254,134,28)]">OnLearn</span>
+          </p>
+          <p className="font-medium w-[100%] lg:w-[100%]">
+            We offer online classes for students in school. With us students can
+            take high quality and highly productive online classes from the
+            comfort of your home.
+          </p>
+          <div className="flex space-2 flex-col  sm:flex-row w-[100%] lg:w-[50%] gap-4">
+            <buton className="h-[53px] text-white font-medium bg-[rgb(13,12,34)] pl-10 pr-10  rounded-3xl flex items-center justify-center hover:cursor-pointer whitespace-nowrap hover:bg-[rgb(63,62,92)] duration-200 hover:scale-105">
+              Find Courses
+            </buton>
+            <buton className="h-[50px]  pl-10 pr-10 text-black shadow font-medium bg-white rounded-3xl flex items-center justify-center hover:cursor-pointer whitespace-nowrap hover:shadow-xl duration-200 hover:scale-105">
+              Get Started
+            </buton>
+          </div>
+        </div>
+        <div
+          style={{
+            clipPath: "polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)",
+          }}
+          className="flex w-[100%] items-center justify-center flex-col">
+          <img
+            className="w-[450px] h-[450px]"
+            src="/images/teacher.png"
+            alt="teacher"
+          />
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* features of our web  */}
+
+      <div className="grid mb-10 justify-center place-content-around grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 md:gap-3 grid-rows-1 lg:grid-cols-3 lg:gap-5 xl:grid-cols-4 xl:gap-5">
+        {/* <div className="flex p-2 devide bg-[rgb(253,253,253)] flex-col rounded-xl border-gray-600 shadow-[0px_0px_10px_rgb(0,0,0,0.1)] justify-center items-center hover:shadow-[2px_28px_12px_-12px_rgba(0,0,0,0.1)] hover:cursor-pointer hover:translate-y-[-10px] hover:origin-top duration-300 border-[1px_solid_rgb(0,0,0,0.1)] h-[100%]">
+          <div className="rounded-full p-5 w-[100%] bg-[rgb(255,242,236)] h-[100px] w-[100px]">
+            <img
+              className="rounded-full h-[100%] w-[100%]"
+              src="https://e-tuitions.com/assets/img/icons/classroom.png"
+              alt="english grammer class"
+            />
+          </div>
+          <div className="p-4">
+            <p className="text-[rgb(0,35,90)] font-bold mb-2">
+              Classes for School & College Students
+            </p>
+            <p className="line-clamp-2 font-medium text-black font-normal">
+              We offer online classes for students in school & college.
+            </p>
+          </div>
+        </div> */}
+        <div className="flex p-2 devide bg-[rgb(253,253,253)] flex-col rounded-xl border-gray-600 shadow-[0px_0px_10px_rgb(0,0,0,0.1)] justify-center items-center hover:shadow-[2px_28px_12px_-12px_rgba(0,0,0,0.1)] hover:cursor-pointer hover:translate-y-[-10px] hover:origin-top duration-300 border-[1px_solid_rgb(0,0,0,0.1)] h-[100%]">
+          <div className="rounded-full p-5 w-[100%] bg-[rgb(255,242,236)] h-[100px] w-[100px]">
+            <img
+              className="rounded-full h-[100%] w-[100%]"
+              src="https://e-tuitions.com/assets/img/icons/free-demo-classes.png"
+              alt="english grammer class"
+            />
+          </div>
+          <div className="p-4">
+            <p className="text-[rgb(0,35,90)] font-bold mb-2">
+              Book Demo Class
+            </p>
+            <p className="line-clamp-2 font-medium text-black font-normal">
+              Just choose your subject/ course & take a free trial class.
+            </p>
+          </div>
+        </div>
+        <div className="flex p-2 devide bg-[rgb(253,253,253)] flex-col rounded-xl border-gray-600 shadow-[0px_0px_10px_rgb(0,0,0,0.1)] justify-center items-center hover:shadow-[2px_28px_12px_-12px_rgba(0,0,0,0.1)] hover:cursor-pointer hover:translate-y-[-10px] hover:origin-top duration-300 border-[1px_solid_rgb(0,0,0,0.1)] h-[100%]">
+          <div className="rounded-full p-5 w-[100%] bg-[rgb(255,242,236)] h-[100px] w-[100px]">
+            <img
+              className="rounded-full h-[100%] w-[100%]"
+              src="https://e-tuitions.com/assets/img/icons/regional-languages.png"
+              alt="class 10"
+            />
+          </div>
+          <div className="p-4">
+            <p className="text-[rgb(0,35,90)] font-bold mb-2">
+              Classes in Regional Language
+            </p>
+            <p className="line-clamp-2 font-medium text-black font-normal">
+              Find teachers who will teach you in your mother tongue.
+            </p>
+          </div>
+        </div>
+        {/* <div className="flex p-2 devide bg-[rgb(253,253,253)] flex-col rounded-xl border-gray-600 shadow-[0px_0px_10px_rgb(0,0,0,0.1)] justify-center items-center hover:shadow-[2px_28px_12px_-12px_rgba(0,0,0,0.1)] hover:cursor-pointer hover:translate-y-[-10px] hover:origin-top duration-300 border-[1px_solid_rgb(0,0,0,0.1)] h-[100%]">
+          <div className="rounded-full p-5 w-[100%] bg-[rgb(255,242,236)] h-[100px] w-[100px]">
+            <img
+              className="rounded-full h-[100%] w-[100%]"
+              src="https://e-tuitions.com/assets/img/icons/diverse-course.png"
+              alt="java coding"
+            />
+          </div>
+          <div className="p-4">
+            <p className="text-[rgb(0,35,90)] font-bold mb-2">
+              Diverse Courses
+            </p>
+            <p className="line-clamp-2 font-medium text-black font-normal">
+              Coding, Foreign languages, Dance, Music. Take online classes for
+              all.
+            </p>
+          </div>
+        </div> */}
+        <div className="flex p-2 devide bg-[rgb(253,253,253)] flex-col rounded-xl border-gray-600 shadow-[0px_0px_10px_rgb(0,0,0,0.1)] justify-center items-center hover:shadow-[2px_28px_12px_-12px_rgba(0,0,0,0.1)] hover:cursor-pointer hover:translate-y-[-10px] hover:origin-top duration-300 border-[1px_solid_rgb(0,0,0,0.1)] h-[100%]">
+          <div className="rounded-full p-5 w-[100%] bg-[rgb(255,242,236)] h-[100px] w-[100px]">
+            <img
+              className="rounded-full h-[100%] w-[100%]"
+              src="https://e-tuitions.com/assets/img/icons/experienced-teacher.png"
+              alt="java coding"
+            />
+          </div>
+          <div className="p-4">
+            <p className="text-[rgb(0,35,90)] font-bold mb-2">
+              Experienced Teachers
+            </p>
+            <p className="line-clamp-2 font-medium text-black font-normal">
+              Take lessons from the Best Teachers in India.
+            </p>
+          </div>
+        </div>
+        <div className="flex p-2 devide bg-[rgb(253,253,253)] flex-col rounded-xl border-gray-600 shadow-[0px_0px_10px_rgb(0,0,0,0.1)] justify-center items-center hover:shadow-[2px_28px_12px_-12px_rgba(0,0,0,0.1)] hover:cursor-pointer hover:translate-y-[-10px] hover:origin-top duration-300 border-[1px_solid_rgb(0,0,0,0.1)] h-[100%]">
+          <div className="rounded-full p-5 w-[100%] bg-[rgb(255,242,236)] h-[100px] w-[100px]">
+            <img
+              className="rounded-full h-[100%] w-[100%]"
+              src="https://e-tuitions.com/assets/img/icons/student-result.png"
+              alt="java coding"
+            />
+          </div>
+          <div className="p-4">
+            <p className="text-[rgb(0,35,90)] font-bold mb-2">
+              Student's Results
+            </p>
+            <p className="line-clamp-2 font-medium text-black font-normal">
+              Every student's results & reviews are important to us.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/* short term courses  */}
+      <div className="">
+        <p className="font-bold text-xl mb-5 uppercase">
+          <span className="w-[10px] bg-[rgb(247,0,0)] rounded-xl">&nbsp;</span>{" "}
+          Online Available Classes
+        </p>
+        <div className="grid justify-center place-content-around grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 md:gap-3 lg:grid-cols-3 lg:gap-5 xl:grid-cols-4 xl:gap-5">
+          <div className="flex devide bg-[rgb(253,253,253)] flex-col rounded-xl border-gray-300 shadow justify-center items-center h-fit hover:shadow-[2px_28px_12px_-12px_rgba(0,0,0,0.1)] hover:cursor-pointer hover:translate-y-[-10px] hover:origin-top duration-300">
+            <div className="relative w-[100%]">
+              <img
+                className=" rounded-t-xl h-[200px] w-[100%]"
+                src="https://e-tuitions.com/images/1640946743388.jpeg"
+                alt="english grammer class"
+              />
+              <p className="p-2 pr-5 font-bold rounded-r-xl text-white bg-[rgb(0,35,90)] hover:bg-[rgb(0,35,90)]-100 absolute bottom-0">
+                English Grammer
+              </p>
+            </div>
+            <div className="p-4">
+              <p className="line-clamp-2 font-medium text-black font-normal">
+                Take english grammer classes from comfort of your home at just
+                100rs per month
+              </p>
+            </div>
+          </div>
+          <div className="flex devide bg-[rgb(253,253,253)] flex-col rounded-xl border-gray-300 shadow justify-center items-center h-fit hover:shadow-[2px_28px_12px_-12px_rgba(0,0,0,0.1)] hover:cursor-pointer hover:translate-y-[-10px] hover:origin-top duration-300">
+            <div className="relative w-[100%]">
+              <img
+                className=" rounded-t-xl h-[200px] w-[100%]"
+                src="https://e-tuitions.com/images/1640946793907.jpeg"
+                alt="english grammer class"
+              />
+              <p className="p-2 pr-5 font-bold rounded-r-xl text-white bg-[rgb(0,35,90)] hover:bg-[rgb(0,35,90)]-100 absolute bottom-0">
+                Class 9 Tutions
+              </p>
+            </div>
+            <div className="p-4">
+              <p className="line-clamp-2 font-medium text-black font-normal">
+                Take classes for class 9 books with comfort of your home at just
+                100rs per month
+              </p>
+            </div>
+          </div>
+          <div className="flex devide bg-[rgb(253,253,253)] flex-col rounded-xl border-gray-300 shadow justify-center items-center h-fit hover:shadow-[2px_28px_12px_-12px_rgba(0,0,0,0.1)] hover:cursor-pointer hover:translate-y-[-10px] hover:origin-top duration-300">
+            <div className="relative w-[100%]">
+              <img
+                className=" rounded-t-xl h-[200px] w-[100%]"
+                src="https://e-tuitions.com/images/1640946634727.jpeg"
+                alt="class 10"
+              />
+              <p className="p-2 pr-5 font-bold rounded-r-xl text-white bg-[rgb(0,35,90)] hover:bg-[rgb(0,35,90)]-100 absolute bottom-0">
+                Class 10 Tutions
+              </p>
+            </div>
+            <div className="p-4">
+              <p className="line-clamp-2 font-medium text-black font-normal">
+                Take classes for class 10 books with comfort of your home at
+                just 100rs per month
+              </p>
+            </div>
+          </div>
+          <div className="flex devide bg-[rgb(253,253,253)] flex-col rounded-xl border-gray-300 shadow justify-center items-center h-fit hover:shadow-[2px_28px_12px_-12px_rgba(0,0,0,0.1)] hover:cursor-pointer hover:translate-y-[-10px] hover:origin-top duration-300">
+            <div className="relative w-[100%]">
+              <img
+                className=" rounded-t-xl h-[200px] w-[100%]"
+                src="https://e-tuitions.com/images/1642060788992.jpeg"
+                alt="java coding"
+              />
+              <p className="p-2 pr-5 font-bold rounded-r-xl text-white bg-[rgb(0,35,90)] hover:bg-[rgb(0,35,90)]-100 absolute bottom-0">
+                Coding with Java
+              </p>
+            </div>
+            <div className="p-4">
+              <p className="line-clamp-2 font-medium text-black font-normal">
+                Take classes for java coding books with comfort of your home at
+                just 100rs per month
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-  )
+  );
 }
