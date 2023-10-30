@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main
       id="my-app"
-      className="flex pt-[5rem] gap-9 bg-white flex-col min-h-screen items-center p-3 lg:pl-[15%] lg:pr-[15%]">
+      className="flex pt-[5rem] gap-9 bg-transperant flex-col min-h-screen items-center p-3 lg:pl-[15%] lg:pr-[15%]">
       {/* main section about */}
       <div className="flex flex-col-reverse lg:flex-row gap-3">
         <div className="flex align-center justify-center flex-col gap-10 pr-3 pl-3 lg:w-[100%] w-[100%]">
@@ -254,7 +254,7 @@ export default function Home() {
           </span>{" "}
           FAQ
         </p>
-        <div className="w-[100%] m-auto shadow rounded-lg p-5">
+        <div className="w-[100%] m-auto shadow rounded-lg p-5 bg-white">
           <section className="bg-white lg:w-5/5 lg:px-10 lg:pb-8 lg:pt-10 rounded-lg flex flex-col lg:flex-row lg:justify-between">
             <div className="w:[100%] lg:w-4/6 mb-5 lg:mb-0">
               <p className="text-xl font-semibold pr-5">
