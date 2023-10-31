@@ -21,6 +21,7 @@
 * {
   /* font-family: "Roboto Condensed", sans-serif; */
   color: black;
+  -webkit-user-drag: none;
 }
 
 html,
