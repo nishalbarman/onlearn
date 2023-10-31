@@ -54,7 +54,7 @@ function Login() {
 
   return (
     <div className="flex items-center justify-center min-h-screen w-[100%]">
-      <div className="flex flex-col basis-1/4 w-64 bg-white p-10 rounded-xl ">
+      <div className="flex flex-col basis-1/4 md:w-64 bg-white p-10 rounded-xl ">
         <h1 className="mb-6 text-left text-2xl font-bold">
           Sign in to OnLearn
         </h1>

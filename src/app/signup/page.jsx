@@ -44,7 +44,7 @@ function Signup() {
 
   return (
     <div className="p-2 flex items-center justify-center min-h-screen">
-      <div className="flex flex-col basis-1/4 w-64 bg-white p-10 rounded-xl ">
+      <div className="flex flex-col basis-1/4 md:w-64 bg-white p-10 rounded-xl ">
         <h1 className="mb-6 text-left text-2xl font-bold">
           Sign up to OnLearn
         </h1>
