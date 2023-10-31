@@ -65,7 +65,7 @@ function Footer() {
         <div className="flex flex-col gap-3  lg:w-auto">
           <p className="text-white text-xl font-semibold">Contacts</p>
           <p className="text-[rgb(145,145,145)] text-normal">
-            Adress: <br></br>
+            {/* Adress: <br></br> */}
             <span className="text-[rgb(180,180,180)]">
               Nalbari, Assam, India, 781335
             </span>
