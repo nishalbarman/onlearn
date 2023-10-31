@@ -54,7 +54,7 @@ function Navbar() {
               width={500}
               height={500}
             />
-            <h2 className="font-bold text-3xl">
+            <h2 className="font-bold text-3xl text-black">
               On<span className="text-[rgb(254,134,28)]">Learn</span>
             </h2>
           </div>
@@ -148,7 +148,7 @@ function Navbar() {
             width={500}
             height={500}
           />
-          <h2 className="font-bold text-3xl">
+          <h2 className="font-bold text-3xl text-black">
             On<span className="text-[rgb(254,134,28)]">Learn</span>
           </h2>
         </div>

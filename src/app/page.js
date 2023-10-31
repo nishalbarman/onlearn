@@ -6,11 +6,11 @@ export default function Home() {
       {/* main section about */}
       <div className="flex flex-col-reverse lg:flex-row gap-3">
         <div className="flex align-center justify-center flex-col gap-10 pr-3 pl-3 lg:w-[100%] w-[100%]">
-          <p className="font-bold text-4xl lg:leading-[4rem] w-[100%]  lg:text-5xl lg:w-[95%]">
+          <p className="font-bold text-4xl lg:leading-[4rem] w-[100%]  lg:text-5xl lg:w-[95%] text-black">
             Learn from anywhere with{" "}
             <span className="text-[rgb(254,134,28)]">OnLearn</span>
           </p>
-          <p className="font-medium w-[100%] lg:w-[100%]">
+          <p className="font-medium w-[100%] text-black lg:w-[100%]">
             We offer online classes for students in school. With us students can
             take high quality and highly productive online classes from the
             comfort of your home.
@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* just simple ad type screen */}
       <div className="w-[100%] h-[150px] lg:h-[180px] rounded-3xl bg-[rgb(255,241,241)] flex items-center justify-between gap-2">
-        <p className="text-xl pl-[20px] lg:text-2xl font-bold lg:pl-[80px]">
+        <p className="text-xl pl-[20px] lg:text-2xl font-bold lg:pl-[80px] text-black">
           What you can expect from us!
         </p>
         <img
@@ -150,7 +150,7 @@ export default function Home() {
 
       {/* short term courses  */}
       <div className="">
-        <p className="font-bold text-xl mb-5 uppercase">
+        <p className="font-bold text-xl mb-5 uppercase text-black">
           <span className="w-[10px] bg-[rgb(254,134,28)] rounded-xl">
             &nbsp;
           </span>{" "}
@@ -234,7 +234,7 @@ export default function Home() {
 
       {/* just simple ad type screen */}
       <div className="w-[100%] h-[150px] lg:h-[180px] rounded-3xl bg-[rgb(232,242,255)] flex items-center justify-between gap-2">
-        <p className="text-xl pl-[20px] lg:text-2xl font-bold lg:pl-[80px]">
+        <p className="text-xl pl-[20px] lg:text-2xl font-bold lg:pl-[80px] text-black">
           May be your are looking for some FAQ
         </p>
         <img
@@ -244,7 +244,7 @@ export default function Home() {
 
       {/* frequently asked questions */}
       <div className="w-[100%]">
-        <p className="font-bold text-xl mb-5 uppercase">
+        <p className="font-bold text-xl mb-5 uppercase text-black">
           <span className="w-[10px] bg-[rgb(254,134,28)] rounded-xl">
             &nbsp;
           </span>{" "}
@@ -265,7 +265,7 @@ export default function Home() {
             </div>
             <div className="w:[100%] lg:w-3/4">
               <details className="border border-slate-200 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7">
+                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7 text-black">
                   How are teachers selected to give online tutoring classes on
                   OnLearn?
                   <div className="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
@@ -286,7 +286,7 @@ export default function Home() {
                   </div>
                 </summary>
                 <hr className="mt-3" />
-                <p className="pt-3 p-1">
+                <p className="pt-3 p-1 text-black">
                   We verify the identity, coordinates (telephone, email and
                   photo), as well as the diploma for all of our teachers.
                   <br />
@@ -295,7 +295,7 @@ export default function Home() {
                 </p>
               </details>
               <details className="border border-slate-200 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7">
+                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7 text-black">
                   How do Online classes works?
                   <div className="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
                     <svg
@@ -315,7 +315,7 @@ export default function Home() {
                   </div>
                 </summary>
                 <hr className="mt-3" />
-                <p className="pt-3 p-1">
+                <p className="pt-3 p-1 text-black">
                   You can discuss directly with your tutor via email or phone.
                   Their contact details are in the left-hand column of the
                   lesson request page. You can then decide with your teacher on
@@ -337,7 +337,7 @@ export default function Home() {
                 </p>
               </details>
               <details className="border border-slate-200 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7">
+                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7 text-black">
                   Can you learn Academic tutoring online?
                   <div className="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
                     <svg
@@ -357,7 +357,7 @@ export default function Home() {
                   </div>
                 </summary>
                 <hr className="mt-3" />
-                <p className="pt-3 p-1">
+                <p className="pt-3 p-1 text-black">
                   Yes, on Superprof you can find teachers taking online classes
                   for all subjects you wish to learn.
                   <br />
@@ -366,7 +366,7 @@ export default function Home() {
                 </p>
               </details>
               <details className="border border-slate-200 rounded pt-2 pb-3 px-3 relative open:shadow-lg mb-1 bg-none open:bg-white duration-300">
-                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7">
+                <summary className="text-normal list-none font-medium relative cursor-pointer pr-7 text-black">
                   What is the average price for online Academic tutoring classes
                   in India?
                   <div className="absolute top-0 right-0 bg-slate-200 rounded-full px-1 py-0.5 cursor-pointer visible open:invisible">
@@ -387,7 +387,7 @@ export default function Home() {
                   </div>
                 </summary>
                 <hr className="mt-3" />
-                <p className="pt-3 p-1">
+                <p className="pt-3 p-1 text-black">
                   The average fee for online Academic tutoring classes is ₹200.
                   <br />
                   The rate will vary based on a number of different factors:
